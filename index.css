@@ -1,0 +1,805 @@
+/* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
+
+/* Ecris ici ton code CSS */
+
+
+
+/* Subtittle animation
+/** fadeInLeft **/
+
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+.in-left {
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+
+/* Header properties, including navigation */
+
+/**** NAV ****/
+
+
+html{
+  font-family: 'Amatic SC', cursive; 
+}
+
+
+nav.navbar-default {
+  opacity:0.9;
+  background-color:black;
+  border:none;
+  -ms-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+
+
+
+
+nav.navbar-default .navbar-nav>li>a{
+  color: #f7ca24;
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+
+
+}
+
+nav.navbar-default .navbar-nav>li>a:focus,
+nav.navbar-default .navbar-nav>li>a:hover {
+  color: #fff !important;
+
+
+}
+
+/**** NAV END ****/
+
+header {
+
+
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  text-align:center;
+  color:white;
+  height:1200px;
+
+
+
+}
+
+
+#img_logo{
+  width:600px;
+  height:233px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:50px; 
+
+}
+
+img {
+  max-width:100%;
+  max-height:100%;
+  display:block;
+}
+
+
+
+#Performances li {
+  list-style:none;
+  display: inline-block;
+  width:33.1%;
+
+
+}
+
+
+/************** Performance's section Attempt 2 ************** */
+
+.box-ac  {
+  display: flex;
+  flex-flow: row no-wrap;
+  align-items:flex-start;
+
+
+}
+
+
+
+p {
+
+  font-size:18px;
+
+}
+
+#Perf-att{
+  margin-top:50px;
+  width:80%; 
+
+
+}
+
+
+.backimg {
+
+
+  background-image:url("http://mestapisdevoiture.fr/img/CDS3.png"); 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:center !important;
+  width:100%;
+  margin-left:200px;
+
+}
+
+h2{
+  margin-top:50px !important ;
+  margin-bottom:40px !important;
+  font-family: 'Amatic SC', cursive;
+  font-size:40px !important;
+}
+
+
+body{
+  font-family: "Amatic SC";
+
+
+
+  background-image:url("https://cdn.hipwallpaper.com/i/25/51/JrHB1X.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top center;
+  background-size: 1920px;
+  text-align:center;
+  color:black;
+
+
+}
+
+
+
+li {
+
+  list-style:none;
+  font-family: 'Amatic SC', cursive;
+
+}
+
+
+
+h1{
+  font-family: 'Amatic SC', cursive !important;
+  font-weight:bold;
+  font-size:50px !important;
+  color:#f7ca24 !important;
+}
+
+/******* SECTION ABOUT US **********/
+
+.section-subheading {
+
+  color:#fff !important; 
+}
+
+#AboutUs{
+
+  background-image:url("http://mestapisdevoiture.fr/img/CDS1.jpg");
+  background-size: cover;
+  
+  color:#f7ca24;
+  font-family: 'Amatic SC', cursive !important;
+}
+
+h3{
+
+  color:#fff ;
+  margin-bottom:50px !important;
+  font-family: 'Amatic SC', cursive !important;
+font-size:30px !important;
+} 
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+.timeline:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #e9ecef;
+}
+.timeline > li {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 50px;
+}
+.timeline > li:after, .timeline > li:before {
+  display: table;
+  content: " ";
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li .timeline-panel {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+.timeline > li .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+.timeline > li .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+.timeline > li .timeline-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: #490204;
+ 
+
+}
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 12px;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+.timeline .timeline-body > ul,
+.timeline .timeline-body > p {
+  margin-bottom: 0;
+  color:#fff;
+  font-family: 'Amatic SC', cursive !important;
+}
+
+@media (min-width: 768px) {
+  .timeline:before {
+    left: 50%;
+  }
+  .timeline > li {
+    min-height: 100px;
+    margin-bottom: 100px;
+  }
+  .timeline > li .timeline-panel {
+    float: left;
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  .timeline > li .timeline-image {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .timeline > li {
+    min-height: 150px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .timeline > li {
+    min-height: 170px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team-member img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team-member h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+
+
+/******* Pricing section Attempt 2 ********/
+
+
+
+
+
+
+table {
+  text-align: center;
+  line-height: 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: auto;
+  margin: 50px auto;
+  border-radius: 0.2rem;
+  font-family: 'Amatic SC', cursive;
+  font-size:25px !important;
+}
+
+thead tr:first-child {
+  background: #922b21;
+  color: #fff;
+  border: none;
+  
+}
+
+
+
+th ,td{
+  font-weight: 500;
+  padding:10px !important;
+}
+
+thead tr:last-child th {
+  border-bottom: 3px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f2f2f2;
+  cursor: default;
+}
+
+tbody tr:last-child td {
+  border: none;
+}
+
+tbody td {
+  border-bottom: 1px solid #ddd;
+}
+
+td:last-child {
+  text-align: center;
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+/* =========================================
+Pricing
+============================================ */
+
+@media (min-width:1200px)
+{
+  #Prices{
+    
+   
+   
+    font-family: 'Amatic SC', cursive !important;
+    background-color:#fff;
+
+    background-image:url("http://mestapisdevoiture.fr/img/CDS4B");
+    background-repeat: no-repeat;
+    background-size: 20%;  
+    background-position:right;
+    
+
+  }
+}
+
+
+
+
+
+/* Form style properties */
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 50%; /* Half width */
+  padding: 10px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 10px; /* Add a top margin */
+  margin-bottom: 50px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-size:20px !important;
+
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #922B21;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top:50px;
+  margin-bottom:50px;
+  margin-left:37%;
+
+
+
+}
+
+
+
+input {
+  background-color: #fff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position:relative;
+  display:block;
+  margin-bottom:50px;
+
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #323130;
+}
+
+/* Add a background color and some padding around the form */
+
+label,textarea
+{
+  position:relative;
+  display:block;
+  overflow:auto;
+  color:#323130;
+  font-weight:bold;
+  font-family: 'Amatic SC', cursive;
+font-size:20px !important;
+}
+
+
+
+
+
+.img-responsive{
+  width : auto;
+  height: auto;
+  display: block;
+
+}
+
+
+@media (min-width:1200px)
+{
+  #Contact{
+
+    background-image:url("http://mestapisdevoiture.fr/img/png-cirque-6.png");
+    background-repeat: no-repeat;
+
+    background-size: contain;
+    font-family: 'Amatic SC', cursive !important;
+
+  }
+}
+
+
+label{
+
+  display:block;
+  width:200px;
+  float:left;
+}
+
+
+
+
+/* Footer properties */
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  line-height:24px;
+  color:#737373;
+ font-family: 'Amatic SC', cursive;
+ font-size:20px !important;
+
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px;
+  font-weight:bold;
+}
+.site-footer a
+{
+  color:white;
+}
+.site-footer a:hover
+{
+  color:#922b21;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none;
+
+}
+.footer-links li
+{
+  display:block
+
+}
+.footer-links a
+{
+  color:white;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#922b21;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d;
+  color:white;
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+
+
+
+
+
+
