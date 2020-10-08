@@ -183,16 +183,10 @@ p {
 }
 
 
-.backimg {
+#Perf-att  p {
 
-
-  background-image:url("img/hiclipart.com.png"); 
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position:center !important;
-  width:100%;
- 
-
+  width:80%;
+  font-size:25px;
 }
 
 h2{
